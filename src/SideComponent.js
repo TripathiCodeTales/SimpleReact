@@ -1,11 +1,11 @@
 import React from "react"; 
 import "./App.css"
 
-const SideComponent = ({title, email,number,OnDetailClick}) => {
+const SideComponent = ({title, email,number,onDetailClick}) => {
 
 const handleOnDetailClick = (email) => {
- alert(`Name: ${email}`)
- OnDetailClick(email)
+//  alert(`Name: ${email}`)
+ onDetailClick(email)
 }
 return(
     <div className = "sideComponent">

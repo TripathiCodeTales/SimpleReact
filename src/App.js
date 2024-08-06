@@ -36,10 +36,13 @@ function App() {
   const [centreDetail, setCentreDetail] = useState(data.Detail);
 
   const handleOnFullData = (email) => {
-    if (email === data.Detail.email || data.SecondDetail.email || data.ThirdDetail.email){
-      setCentreDetail()
+    if (email === data.Detail.email ){
+      setCentreDetail(data.Detail)
+    } else if( email === data.SecondDetail.email){
+      setCentreDetail(data.SecondDetail)
+    } else if (email === data.ThirdDetail.email){
+      setCentreDetail(data.ThirdDetail)
     }
-    //  data.filter(())
     }
   
 
@@ -55,17 +58,19 @@ function App() {
             title={data.Detail.name}
             email={data.Detail.email}
             number={data.Detail.number}
-            OnDetailClick={handleOnFullData}
+            onDetailClick={handleOnFullData}
           />
           <SideComponent
             title={data.SecondDetail.name}
             email={data.SecondDetail.email}
             number={data.SecondDetail.number}
+            onDetailClick={handleOnFullData}
           />
           <SideComponent
             title={data.ThirdDetail.name}
             email={data.ThirdDetail.email}
             number={data.ThirdDetail.number}
+            onDetailClick={handleOnFullData}
           />
         </div>
         <div className="CentreComponent">
