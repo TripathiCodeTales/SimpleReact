@@ -11,7 +11,6 @@ function App() {
       name: "John Smith",
       email: "jsmith@test.com",
       number: "123456789",
-      Phone: "123456789",
       City: "bangalore",
       State: "karnataka",
       Country: "India",
@@ -25,12 +24,24 @@ function App() {
       name: "ABCD",
       email: "abcd@test.com",
       number: "987654321",
+      City : "Mangalore",
+      State : "karnataka",
+      Country : "India",
+     Organization : "Company 2",
+    JobProfile : "Software Developer",
+AdditionalInfo : "Buys Products Rarely"
     },
     ThirdDetail: {
       id: "3",
       name: "Tyrion",
       email: "tyrion@test.com",
       number: "123412345",
+      City : "Chennai",
+      State : "Tamil Nadu",
+      Country : "India",
+     Organization : "Company 3",
+    JobProfile : "Software Developer",
+    AdditionalInfo : "Buys Lots of Products in general"
     },
   };
   const [centreDetail, setCentreDetail] = useState(data.Detail);
