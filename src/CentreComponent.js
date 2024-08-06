@@ -5,7 +5,7 @@ const CentreComponent = ({Detail}) => {
 return (
     <>
     <div>
-        
+    <h4 className="subTitle">{Detail.name}</h4>
     </div>
     Name : {Detail.name}
     Email : {Detail.email}

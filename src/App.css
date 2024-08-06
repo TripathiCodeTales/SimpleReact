@@ -36,6 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.pageContent{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+}
 .reusableComp{
   display: flex;
  flex-direction: column;
@@ -43,6 +49,7 @@
   width:320px;
   margin-left:1%;
   margin-top:1%;
+  width:30%;
 }
 .subTitle{
   background-color:#d9edf7;
@@ -81,4 +88,8 @@
 
 .basicdet{
   padding-bottom: 1%;
+}
+
+.CentreComponent{
+  width:70%;
 }
